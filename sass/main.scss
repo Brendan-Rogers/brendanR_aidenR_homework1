@@ -1,0 +1,6 @@
+@import '_vars';
+@import 'modules/_header';
+body{
+    background-color: $body-bckgrd;
+    color: $title-color;
+}
