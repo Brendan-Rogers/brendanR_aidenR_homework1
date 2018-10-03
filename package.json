@@ -22,7 +22,10 @@
   },
   "homepage": "https://github.com/Brendan-Rogers/brendanR_aidenR_homework1#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "flexbox": "0.0.3"
   }
 }
