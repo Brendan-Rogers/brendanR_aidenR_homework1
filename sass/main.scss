@@ -1,7 +1,8 @@
 @import '_vars';
-@import 'modules/_header';
 @import 'modules/_blur';
 @import 'modules/_slideIn';
+@import 'modules/_hamburger';
+
 @font-face {
 	font-family: 'tw';
 	src:
@@ -40,6 +41,7 @@ li{
     text-transform: uppercase;
 }
   
+
 
 #navbar {
     top: 0;
@@ -142,10 +144,17 @@ li{
   font-size: 1.25em;
   margin-left: 20px; 
 }
-
-
+ 
+    .studentPortfolio {
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+    
+  
 
 @media screen and (min-width: $breakpoint-tablet){
+
 
 }
 

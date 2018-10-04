@@ -1,5 +1,5 @@
-const navOpen = "fa-bars";
-const navClose = "fa-times";
+const NAV_OPENED_CLASS = "change";
+const NAV_CLOSED_CLASS = "changeBack";
 
 window.onload = function() {
   const navBtn = document.getElementById("nav-btn");
@@ -7,7 +7,7 @@ window.onload = function() {
   const navbar = document.getElementById("navbar");
 
   navBtn.addEventListener("click", function() {
-    if (classes.contains(navOpen)) {
+    if (classes.contains(NAV_OPENED_CLASS)) {
       openNav();
     } else {
       closeNav();
@@ -21,13 +21,14 @@ window.onload = function() {
   });
 
   function closeNav() {
-    classes.remove(navClose);
-    classes.add(navOpen);
+    classes.remove(NAV_CLOSED_CLASS);
+    classes.add(NAV_OPENED_CLASS);
     navbar.classList.add("hide");
   }
   function openNav() {
-    classes.remove(navOpen);
-    classes.add(navClose);
+    classes.remove(NAV_OPENED_CLASS);
+    classes.add(NAV_CLOSED_CLASS);
     navbar.classList.remove("hide");
   }
 };
+
