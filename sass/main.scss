@@ -1,7 +1,8 @@
 @import '_vars';
-@import 'modules/_header';
 @import 'modules/_blur';
 @import 'modules/_slideIn';
+@import 'modules/_hamburger';
+
 @font-face {
 	font-family: 'tw';
 	src:
@@ -48,95 +49,12 @@ li{
   }
   
 
-#navbar {
-    top: 0;
-    left: 0;
-    position: fixed;
-    width: 75vw;
-    height: 100vh;
-    background-color:white;
-    opacity: 0.8;
-    z-index: 10;
-    animation-name: slideIn;
-    animation-duration: 1s;
-  }
-  #nav-btn {
-    cursor: pointer;
-    position: fixed;
-    top: 10%;
-    left: 85%;
-    background-color: white;
-    color: #777;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
-    padding: 1em;
-    font-size: 1rem;
-    line-height: 0.7em;
-    z-index: 100;
-    transition: transform 300ms;
-  }
 
-  .nav-links {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    list-style: none;
-    text-align: center;
-  }
-  .nav-link {
-    display: block;
-    margin: 0.5em;
-    padding: 0.5em;
-    font-size: 1rem;
-    text-decoration: none;
-    color: goldenrod;
-    text-transform: uppercase;
-    transition: all 200ms;
-  }
-
-  
-
-  .blur1
-  {
-    animation-name: blur;
-    animation-duration: 1.6s;
-  }
-
-  .blur2
-  {
-    animation-name: blur;
-    animation-duration: 2.2s;
-  }
-
-  .blur3
-  {
-    animation-name: blur;
-    animation-duration: 2.8s;
-  }
-
-  .blur4
-  {
-    animation-name: blur;
-    animation-duration: 3.4s;
-  }
-
-  .blur5
-  {
-    animation-name: blur;
-    animation-duration: 4s;
-  }
  
   .hide {
     display: none;
   }
        
-  
-  .mobileBckgrd
-  {
-    
-  }
 
   .mobileFace
   {
@@ -151,6 +69,15 @@ li{
       text-align: center;
       margin-top: 10px;
   }
+
+  
+    .studentPortfolio {
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+    
+  
 
 
 @media (min-width: $breakpoint-tablet){}

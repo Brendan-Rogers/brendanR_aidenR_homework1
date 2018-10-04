@@ -4,3 +4,8 @@
     from {width: 0vw}
     to {width: 75vw}
 }
+
+@keyframes slideOut {
+    from {width: 75vw}
+    to {width: 0vw}
+}
