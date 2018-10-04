@@ -16,61 +16,135 @@ body{
     margin: 0;
     padding: 0;
 }
-
 .hidden
 {
     display: none;
 }
-
- h1, h2, p, a
+ h1, h2, h3, h4, p, a
 {
   color: $navFont;
   font-family: tw, 'Times New Roman', Times, serif;
 }
-
 li{
     list-style-type: none;
 }
-
-.title
-{
+.title {
    text-align: center; 
    display: block;
     margin: 0;
-  }
-
-  .title h1
-  {
-      margin: 0;
-      letter-spacing: 2px;
-      font-size: 48px;
-      color: rgb(255, 255, 255);
-      text-transform: uppercase;
-  }
+}
+.title h1 {
+    margin: 0;
+    letter-spacing: 2px;
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
   
 
 
+#navbar {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 75vw;
+    height: 100vh;
+    background-color:white;
+    opacity: 0.8;
+    z-index: 10;
+    animation-name: slideIn;
+    animation-duration: 1s;
+  }
+#nav-btn {
+  cursor: pointer;
+  position: fixed;
+  top: 10%;
+  left: 85%;
+  background-color: white;
+  color: #777;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  padding: 1em;
+  font-size: 1rem;
+  line-height: 0.7em;
+  z-index: 100;
+  transition: transform 300ms;
+}
+
+.nav-links {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  list-style: none;
+  text-align: center;
+}
+.nav-link {
+  display: block;
+  margin: 0.5em;
+  padding: 0.5em;
+  font-size: 1rem;
+  text-decoration: none;
+  color: goldenrod;
+  text-transform: uppercase;
+  transition: all 200ms;
+}
+.blur1
+{
+  animation-name: blur;
+  animation-duration: 1.6s;
+}
+.blur2
+{
+  animation-name: blur;
+  animation-duration: 2.2s;
+}
+.blur3
+{
+  animation-name: blur;
+  animation-duration: 2.8s;
+}
+.blur4
+{
+  animation-name: blur;
+  animation-duration: 3.4s;
+}
+.blur5
+{
+  animation-name: blur;
+  animation-duration: 4s;
+}
+.hide {
+  display: none;
+}
+.mobileFace {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.bottom {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.subHead {
+  font-size: 2em;
+  margin-bottom: -20px;
+
+}
+
+.bio, .subHead {
+  margin-left: 20px; 
+}
+
+.greyout {
+  color: grey;
+  font-size: 1.25em;
+  margin-left: 20px; 
+}
  
-  .hide {
-    display: none;
-  }
-       
-
-  .mobileFace
-  {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-  }
-
-  .bottom
-  {
-      text-align: center;
-      margin-top: 10px;
-  }
-
-  
     .studentPortfolio {
       font-size: 0.875rem;
       text-transform: uppercase;
@@ -79,6 +153,8 @@ li{
     
   
 
+@media screen and (min-width: $breakpoint-tablet){
 
-@media (min-width: $breakpoint-tablet){}
+
+}
 
