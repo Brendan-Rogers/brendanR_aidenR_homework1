@@ -1,3 +1,4 @@
+
 var gulp = require('gulp'),
 	sass = require('gulp-sass');
 
@@ -18,4 +19,3 @@ gulp.task('build-css', function() {
 
 gulp.task('watch', function() {
 	gulp.watch('resources/sass/**/*.scss', ['build-css']);
-});
