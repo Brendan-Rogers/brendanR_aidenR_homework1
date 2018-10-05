@@ -27,6 +27,7 @@
     "gulp-sass": "^4.0.1"
   },
   "dependencies": {
-    "flexbox": "0.0.3"
+    "flexbox": "0.0.3",
+    "sass": "^1.14.1"
   }
 }

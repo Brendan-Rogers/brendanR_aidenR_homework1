@@ -6,9 +6,9 @@
 @font-face {
 	font-family: 'tw';
 	src:
-         url('../fonts/TwCenMT_Regular.woff') format('woff'),
-         url('../fonts/TwCenMT_Regular.woff2') format('woff2'),
-         url('../fonts/TwCenMT_Regular.ttf') format('truetype') ;}
+    url('../fonts/TwCenMT_Regular.woff') format('woff'),
+    url('../fonts/TwCenMT_Regular.woff2') format('woff2'),
+    url('../fonts/TwCenMT_Regular.ttf') format('truetype') ;}
 
 body{
     background-color: $bckgrdColor;
@@ -22,7 +22,7 @@ body{
     display: none;
 }
 
- h1, h2, p, a
+ h1, h2, h3, h4, p, a
 {
   color: $navFont;
   font-family: tw, 'Times New Roman', Times, serif;
@@ -34,51 +34,239 @@ li{
 
 .title
 {
-   text-align: center; 
-   display: block;
-    margin: 0;
-  }
+  text-align: center; 
+  display: block;
+  margin: 0;
+  margin: 0;
+  letter-spacing: 2px;
+  font-size: 48px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+.hide {
+  display: none;
+}
+     
 
-  .title h1
-  {
-      margin: 0;
-      letter-spacing: 2px;
-      font-size: 48px;
-      color: rgb(255, 255, 255);
-      text-transform: uppercase;
+#imgHead
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.bottom
+{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.studentPortfolio {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.subHead {
+    font-size: 2em;
+    margin-bottom: -20px;
+  
   }
   
+.bio, .subHead, .piece h3 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.greyout {
+  color: grey;
+  font-size: 1.25em;
+  margin-left: 20px; 
+}
+.piece {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.piece img {
+  width: 80%;
+  height: auto;
+}
+.piece h3 {
+  width: 75%;
+}
+.pieceHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pieceHead h3 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.pieceHead h4 {
+  margin-top: 10px;
+}
+.pieceHead h3, .pieceHead h4 {
+  width: 80%;
+}
+.btnView {
+  color: $viewProject;
+  font-size: 2em;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.homeLayout {
+  display: flex;
+  flex-direction: column;
+}
+.studentPortfolio {
+  text-align: center;
+}
+.fixThis {
+  height: 0em;
+}
+
+.subHeadContact {
+  margin-bottom: 0em;
+  margin-left: 0px;
+}
+
+.contactForm {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.inputZone input {
+  width: 100%;
+  margin-top: 1.2em;
+  background-color: #888686;
+}
+.inputZone input::placeholder {
+  color: $navFont;
+  font-family: tw, 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+}
+#comments {
+  padding-bottom: 189px;
+}
+#submit {
+  border-radius: 10px;
+  width: 40%;
+  margin-left: 30%;
+
+  color: $navFont;
+  font-family: tw, 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+#contactFace {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 1em;
+}
+.copyright {
+  text-align: center;
+}
 
 
- 
-  .hide {
-    display: none;
-  }
-       
 
-  .mobileFace
-  {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-  }
 
-  .bottom
-  {
-      text-align: center;
-      margin-top: 10px;
-  }
-
-  
-    .studentPortfolio {
-      font-size: 0.875rem;
-      text-transform: uppercase;
-      line-height: 1.2;
-    }
     
   
 
 
-@media (min-width: $breakpoint-tablet){}
+@media (min-width: $breakpoint-tablet){
+  .portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .subHead {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: 0.3em;
+    font-size: 3em;
+  }
+  .bio {
+    display: none;
+  }
+  .pieceHead {
+    width: 15%;
+    align-self: center;
+  }
+  .piece {
+    width: 25%;
+    height: auto;
+  }
+  .piece h3 {
+    font-size: 1em;
+  }
+  // .btnView {
+  //   justify-self: flex-end;
+  // }
+  #imgHead {
+    width: 90%;
+    z-index: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 40px;
+  }
+  .title {
+    z-index: 1;
+    margin-left: 1em;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: 1.4em;
+    font-size: 3em;
+    margin-top: 60px;
+  }
+  .homeLayout {
+    flex-direction: row;
+  }
+  .desktopNavList {
+    display: flex;
+    justify-content: space-evenly;
+
+    color: $navFont;
+    font-family: tw, 'Times New Roman', Times, serif;
+  }
+  #desktopNav {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding-top: 0.1em;
+    padding-bottom: 0.05em;
+  }
+  .fixThis {
+    position: fixed;
+    width: 100%;
+    height: auto;
+  }
+  .studentPortfolio {
+    text-align: center;
+  }
+
+
+  .contactForm {
+    display: flex;
+    flex-direction: row;
+  }
+  .inputZone {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 3em;
+  }
+  #contactFace {
+    width: auto;
+    height: 500px;
+    margin-top: -1em;
+    transform: translateX(20%);
+  }
+
+  
+}
 

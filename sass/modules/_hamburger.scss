@@ -1,5 +1,5 @@
-@import 'modules/_blur';
-@import 'modules/_slideIn';
+@import '_blur';
+@import '_slideIn';
 
 #navbar {
     top: 0;
@@ -23,6 +23,12 @@
     z-index: 100;
     transition: transform 300ms;
     animation-name: blur;
+    display: box;
+  }
+  @media (min-width: $breakpoint-tablet){
+    #nav-btn {
+        display: none;
+    }
   }
 
   .nav-links {

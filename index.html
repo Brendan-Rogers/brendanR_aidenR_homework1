@@ -9,6 +9,7 @@
   <title>Gold</title>
 </head>
 <body class="indexBody">
+
   <header class="header">
 
 
@@ -19,33 +20,129 @@
         </div>
         
     <nav id="navbar" class="hide">
-       
-         
-         
 
       <h1 class="hidden">Header Navigation</h1>
-        <ul class="nav-links"></ul>
-         <li><a class="nav-link blur1" href="#">Brendan</a></li> 
-         <li><a class="nav-link blur2" href="#">Aiden</a></li> 
-         <li><a class="nav-link blur3 " href="#">Collaborative</a></li> 
-         <li><a class="nav-link blur4" href="#">Contact</a></li> 
-         <li><a class="nav-link blur5" href="#">About</a></li> 
-        </ul>
 
-      
+      <!-- MOBILE -->
+      <ul class="nav-links"></ul>
+       <li><a class="nav-link blur1" href="#">Brendan</a></li> 
+       <li><a class="nav-link blur2" href="#">Aiden</a></li> 
+       <li><a class="nav-link blur3 " href="#">Collaborative</a></li> 
+       <li><a class="nav-link blur4" href="#">Contact</a></li> 
+       <li><a class="nav-link blur5" href="#">About</a></li> 
+      </ul>
 
     </nav>
-  <section class="title">
-    <h1>Gold</h1>
-  </section>
+    
+    <div class="fixThis">
+    <nav id="desktopNav">
+      <!-- DESKTOP -->
+      <ul class="desktopNavList">
+        <li>BRENDAN</li>
+        <li>AIDEN</li>
+        <li>CONTACT</li>
+        <li>ABOUT</li>
+      </ul>
+    </nav>
+    </div>
+
+  <div class="homeLayout">
+
+    <h1 class="title">Gold</h1>
+
+    <div id="mobileBckgrd">
+      <img id="imgHead" src="images/mobile_index/mobile_face.png" alt="wireframe">
+    </div>
+  </div>
+
+  <h2 class="studentPortfolio">Student Portfolio</h2>
 
 </header>
-<div id="mobileBckgrd">
-  <img src="images/mobile_index/mobile_face.png" alt="wireframe" class="mobileFace">
-</div>
-<div class="bottom">
-<h2 class="studentPortfolio">Student Portfolio</h2>
-<h2 class="copyright">copyright@2018 Gold</h2></div>
+
+
+
+
+<!-- BRENDAN section -->
+<section class="portfolio">
+
+  <div class="pieceHead">
+    <h3 class="subHead">BRENDAN</h3>
+    <h3 class="greyout">//developer</h3>
+    <h4 class="bio">Brendan Rogers is a freelance web programmer based out of London, Ontario. He does semi-professional video work on the side. His work is GOLD. Contact Brendan directly at brendan@notwheat.ca</h4>
+  </div>
+
+  <div class="piece">
+    <img src="images/mobile_port/brendan_port_1_mobile.png" alt="Celtic" id="imgCeltic">
+    <h3>A series of proffesional promotional pieces, produced by Brendan for Camp Celtic in summer 2018. Used by directors to promote their service to dozens of schools yearly.</h3>
+    <h4 class="btnView">View Project</h4>
+  </div>
+
+  <div class="piece">
+    <img src="images/mobile_port/brendan_port_2_mobile.png" alt="Maritimes" id="imgMaritimes">
+    <h3>This documentary was produced by Brendan in fall 2016, part of a series of mockumentaries for YouTube channel "NotWheat Productions"</h3>
+    <h4 class="btnView">View Project</h4>
+  </div>
+
+  <div class="piece">
+    <img src="images/mobile_port/brendan_port_3_mobile.png" alt="Pure Volume" id="imgVolume">
+    <h3>Mockup "PureVolume" music journalism website, programmed by Brendan Rogers and Drew Shewaga, in collaberation with Team 505.</h3>
+    <h4 class="btnView">View Project</h4>
+  </div>
+</section>
+
+
+<!-- AIDEN section -->
+<section class="portfolio">
+
+  <div class="pieceHead">
+    <h3 class="subHead">AIDEN</h3>
+    <h3 class="greyout">//designer</h3>
+    <h4 class="bio">Aiden Reikenbrauck is a freelance 3D modeller and animator, based in London Ontario. He is also profficient in the web design field. His work is GOLD. Contact Aiden directly at aiden@notwheat.ca</h4>
+  </div>
+
+  <div class="piece">
+    <img src="images/mobile_port/aiden_port_1_mobile.png" alt="Building" id="imgBuilding">
+    <h3>Concept design of a futurustic building. Built in Cinema 4D and rendered out using Octane Renderer.</h3>
+    <h4 class="btnView">View Project</h4>
+  </div>
+
+  <div class="piece">
+    <img src="images/mobile_port/aiden_port_2_mobile.png" alt="Man" id="imgMan">
+    <h3>Abstract render of a man holding a glowing orb. Model posed in DAZ, scene compiled in Cinema 4D and rendered out using Octane Renderer.</h3>
+    <h4 class="btnView">View Project</h4>
+  </div>
+
+  <div class="piece">
+    <img src="images/mobile_port/aiden_port_3_mobile.png" alt="Ball" id="imgBall">
+    <h3>Abstract render of a glowing orb, inspired by the movie 'Spiderman 2'. The scene was built in Cinema 4D and rendered using Octane Renderer</h3>
+    <h4 class="btnView">View Project</h4>
+  </div>
+</section>
+
+
+
+<section class="contactForm">
+
+  <h3 class="subHead subHeadContact">CONTACT</h3>
+  
+  <form action="" method="get" class="inputZone">
+    
+    <input type="text" name="name" id="name" placeholder="NAME" required>
+    <input type="email" name="email" id="email" placeholder="EMAIL" required>
+    <input type="text" name="comments" id="comments" placeholder="COMMENTS" required>
+
+    <input type="submit" value="SUMBIT" id="submit">
+
+  </form>
+
+  <img id="contactFace" src="images/mobile_index/contact_mobile.png" alt="GOLD face">
+
+</section>
+
+  <h2 class="copyright">copyright@2018 Gold</h2></div>
+  <div class="bottom">
+
+
 <script src="js/main.js"></script>
 </body>
 </html>
